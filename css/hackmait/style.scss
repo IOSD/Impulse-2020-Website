@@ -315,7 +315,7 @@ canvas {
       height: 100%;
       position: absolute;
       z-index: 0;
-      background: url('../assets/images/poster.jpg') no-repeat center center/cover;
+      background: url('../../assets/images/poster.jpg') no-repeat center center/cover;
       opacity: 0.5;
       mix-blend-mode: lighten;
     }
@@ -327,7 +327,7 @@ canvas {
     &:after {
       z-index: 2;
       mix-blend-mode: lighten;
-      background: url('../assets/images/poster.jpg')  no-repeat center center/cover;
+      background: url('../../assets/images/poster.jpg')  no-repeat center center/cover;
       opacity: 1;
 
     }
