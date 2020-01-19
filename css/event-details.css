@@ -13,6 +13,9 @@
 	color: #e14eca;
 	margin: 0;
 }
+#solidnav{
+	background: #1d8cf8;
+}
 
 
 @media (max-width: 786px)
