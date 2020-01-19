@@ -13,9 +13,6 @@
 	color: #e14eca;
 	margin: 0;
 }
-#first-div{
-	padding-top: 5vh;
-}
 
 
 @media (max-width: 786px)
@@ -29,4 +26,8 @@
 	.page-title{
 		display: inline-block;
 	}
+	#first-div{
+	padding-top: 5vh;
+	}
+
 }
