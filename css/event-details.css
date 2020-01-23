@@ -23,10 +23,15 @@
 #headingOne,#headingTwo{
 	padding:0;
 }
+.bw{
+	width: 100%;
+	text-align: left;
+}
 .btn-color{
 	color:#1d8cf8;
 	transition: margin-left .5s;
 	font-weight: 400;
+	width: 100%;
 }
 
 .btn-color:hover{
@@ -36,6 +41,9 @@
 .r-body{
 	font-weight: 300;
 	color: lightgrey;
+}
+.collapse-icon{
+	text-align: right;
 }
 @media (max-width: 786px)
 {
