@@ -13,24 +13,46 @@
 	color: #e14eca;
 	margin: 0;
 }
-#solidnav{
-	background: #1d8cf8;
+.rule-heading{
+	padding-top: 0;
+}
+.collapse-box{
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+#headingOne,#headingTwo{
+	padding:0;
+}
+.btn-color{
+	color:#1d8cf8;
+	transition: margin-left .5s;
+	font-weight: 400;
 }
 
+.btn-color:hover{
+	margin-left: .5em;
+}
 
+.r-body{
+	font-weight: 300;
+	color: lightgrey;
+}
 @media (max-width: 786px)
 {
 	.order1{
-	order: 1;
+		order: 1;
 	}
 	.order2{
-	order: 2;
+		order: 2;
+	}
+	.order3{
+		order: 3;
 	}
 	.page-title{
 		display: inline-block;
 	}
 	#first-div{
-	padding-top: 5vh;
+		padding-top: 5vh;
 	}
 
 }
