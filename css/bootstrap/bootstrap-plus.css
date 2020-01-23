@@ -1,4 +1,5 @@
 
+
 @keyframes move-left-right {
   0% {
     transform: translateX(-10px);
@@ -16643,20 +16644,13 @@ textarea.form-control:active {
 }
 
 .profile-page .page-header .container {
-  padding-top: 20vh;
+  padding-top: 30vh;
 }
 
 .profile-page .page-header .path {
-  max-width: 55%;
+  max-width: 65%;
   right: 0;
-  top: 90px;
-  margin-right: 25px;
-}
-@media (max-width: 786px){
-  .profile-page .page-header .path {
-    display: none;
-  }
-
+  top: 100px;
 }
 
 .profile-page .info {
