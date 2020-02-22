@@ -99,6 +99,10 @@ button {
   margin: 0;
 }
 
+.heading--dark {
+  color: #25ced1;
+}
+
 @media (max-width: 720px) {
   .heading {
     font-size: 2rem;
@@ -197,7 +201,16 @@ button {
   background: #fff;
   -webkit-transition: all 1s;
   transition: all 1s;
-  padding: 2rem;
+  padding: 2rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .flex-card__content:hover {
@@ -235,7 +248,7 @@ button {
   font-family: '', sans-serif;
   letter-spacing: 0.05rem;
   font-weight: 700;
-  background: #221d1f;
+  background: #011638;
   color: #fff;
   text-align: center;
   padding: 8px 24px;
@@ -250,6 +263,7 @@ button {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  color: #25ced1;
 }
 
 @media (max-width: 720px) {
@@ -281,6 +295,7 @@ button {
   padding: 1rem;
   font-weight: 800;
   margin: 1rem;
+  color: #011638;
 }
 
 @media (max-width: 720px) {
@@ -293,6 +308,7 @@ button {
 
 .countdown__text {
   font-size: 1rem;
+  color: #25ced1;
   text-transform: capitalize;
   font-weight: 100;
 }
@@ -305,13 +321,14 @@ button {
 
 .countdown__sub-header {
   font-weight: 400;
+  color: #011638;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 0.1rem;
   line-height: 1.5rem;
 }
 
 .judges {
-  background: #000;
+  background: #011638;
   min-height: 100vh;
   color: #fff;
   padding: 3rem 0 2rem 0;
@@ -516,6 +533,11 @@ button {
 .schedule__container {
   width: 80%;
   margin: 0 auto;
+  color: #011638;
+}
+
+.schedule__container .date p {
+  color: #25ced1;
 }
 
 .schedule ul.main {
@@ -608,7 +630,7 @@ button {
 }
 
 .venue {
-  background: #000;
+  background: #011638;
   color: #fff;
   text-align: center;
   padding: 2rem 0;
@@ -664,7 +686,7 @@ button {
 }
 
 .footer {
-  background: #000;
-  min-height: 50vh;
+  background: #011638;
+  min-height: 10vh;
 }
 /*# sourceMappingURL=style.css.map */

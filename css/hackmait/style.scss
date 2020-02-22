@@ -1,3 +1,5 @@
+$background-dark : #011638; 
+$heading : #25ced1;
 canvas {
   
     position: absolute;
@@ -83,7 +85,9 @@ canvas {
     font-weight: 300;
     line-height: 1.2;
     padding: 0.5rem 0.2rem 0 0;
-    
+    &--dark{
+      color: $heading;
+    }
     @media (max-width:720px) {
        font-size: 2rem;
     }
@@ -165,8 +169,10 @@ canvas {
       width: 40vw;
       background: #fff;
       transition: all 1s;
-      padding: 2rem;
-     
+      padding: 2rem 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
      
       &:hover{
       margin: 5% 0 0 -10%;
@@ -204,7 +210,9 @@ canvas {
       font-family: '', sans-serif;
       letter-spacing: 0.05rem;
       font-weight: 700;
-      background: #221d1f;
+      background: $background-dark;
+      
+      //background: #221d1f;
       color: #fff;
       text-align: center;
       padding: 8px 24px;
@@ -214,6 +222,8 @@ canvas {
   display:flex;
   align-items: center;
   justify-content: space-around;
+  color: $heading;
+
   @media (max-width:720px) {
     flex-direction: column; 
     justify-content: start;
@@ -231,6 +241,7 @@ canvas {
       padding: 1rem;
       font-weight: 800;
       margin: 1rem;
+      color: $background-dark;
       @media (max-width:720px) {
       font-size: 1.4rem;
       padding: 0rem;
@@ -240,6 +251,7 @@ canvas {
     }
     &__text{
       font-size: 1rem;
+      color: $heading;
       text-transform: capitalize;
       font-weight: 100;
     }
@@ -250,6 +262,7 @@ canvas {
     }
     &__sub-header{
       font-weight: 400;
+      color: $background-dark;
       font-family: 'Raleway', sans-serif;
       letter-spacing: 0.1rem;
       line-height: 1.5rem;
@@ -257,7 +270,7 @@ canvas {
   }
 
   .judges{
-    background: #000;
+    background: $background-dark ;
     min-height: 100vh;
     color: #fff;
     padding: 3rem 0 2rem 0;
@@ -462,6 +475,10 @@ canvas {
   &__container{
     width: 80%;
     margin: 0 auto;
+    color: $background-dark;
+    .date p{
+      color: $heading;
+    }
   }
 
 
@@ -556,7 +573,7 @@ h3 {padding: 0; margin: 0;}
 }
 
 .venue{
-  background: #000;
+  background: $background-dark ;
   color: #fff;
   text-align: center;
   padding: 2rem 0;
@@ -600,6 +617,6 @@ h3 {padding: 0; margin: 0;}
 }
 
 .footer{
-  background: #000;
-  min-height: 50vh;
+  background: $background-dark ;
+  min-height: 10vh;
 }
