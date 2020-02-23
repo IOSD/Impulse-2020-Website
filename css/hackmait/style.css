@@ -11,7 +11,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  font-family: 'Open Sans','sans-sarif';
+  font-family: "Open Sans", "sans-sarif";
 }
 
 * {
@@ -43,7 +43,8 @@ button {
   transition: 0.25s;
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
   border-color: var(--hover);
   color: #fff;
 }
@@ -75,7 +76,7 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -87,6 +88,34 @@ button {
         -ms-flex-pack: start;
             justify-content: start;
   }
+}
+
+.header__logo {
+  width: 40%;
+}
+
+.header__logo p {
+  margin: 0;
+  text-align: right;
+  letter-spacing: 0.1rem;
+  padding-right: 12px;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 720px) {
+  .header__logo p {
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 720px) {
+  .header__logo {
+    width: 80%;
+  }
+}
+
+.header__logo img {
+  width: 100%;
 }
 
 .heading {
@@ -111,7 +140,7 @@ button {
 
 .heading--bold {
   font-size: 4.5rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 900;
 }
 
@@ -138,7 +167,7 @@ button {
 }
 
 .bold {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 900;
 }
 
@@ -171,12 +200,14 @@ button {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .flex-card__image {
   width: 50%;
   max-height: 60vh;
+  text-align: center;
+  background: #000;
 }
 
 @media (max-width: 720px) {
@@ -245,10 +276,10 @@ button {
   top: -1rem;
   left: -5%;
   text-transform: capitalize;
-  font-family: '', sans-serif;
+  font-family: "", sans-serif;
   letter-spacing: 0.05rem;
   font-weight: 700;
-  background: #011638;
+  background: #000000;
   color: #fff;
   text-align: center;
   padding: 8px 24px;
@@ -287,7 +318,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .countdown__count {
@@ -295,7 +326,7 @@ button {
   padding: 1rem;
   font-weight: 800;
   margin: 1rem;
-  color: #011638;
+  color: #000000;
 }
 
 @media (max-width: 720px) {
@@ -315,20 +346,20 @@ button {
 
 .countdown__header {
   font-weight: 600;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   letter-spacing: 0.2rem;
 }
 
 .countdown__sub-header {
   font-weight: 400;
-  color: #011638;
-  font-family: 'Raleway', sans-serif;
+  color: #000000;
+  font-family: "Raleway", sans-serif;
   letter-spacing: 0.1rem;
   line-height: 1.5rem;
 }
 
 .judges {
-  background: #011638;
+  background: #000000;
   min-height: 100vh;
   color: #fff;
   padding: 3rem 0 2rem 0;
@@ -384,7 +415,7 @@ button {
 
 .judges .card-profile_visual:before, .judges .card-profile_visual:after {
   display: block;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -424,7 +455,7 @@ button {
   left: 0;
   right: 0;
   margin: auto;
-  background-color: #F96B4C;
+  background-color: #f96b4c;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#485563), to(#29323c));
   background-image: linear-gradient(#485563, #29323c);
   display: block;
@@ -445,7 +476,7 @@ button {
 }
 
 .judges .card-profile_user-infos a:after {
-  content: '';
+  content: "";
   font-style: normal;
   position: absolute;
   width: 100%;
@@ -463,7 +494,7 @@ button {
 .judges .card-profile_user-infos .infos_nick {
   display: block;
   clear: both;
-  padding: .5em 0;
+  padding: 0.5em 0;
   padding-top: 0;
   position: absolute;
   width: 100%;
@@ -491,7 +522,7 @@ button {
 .judges .card-profile_user-stats .stats-holder {
   position: absolute;
   width: 100%;
-  top: calc( 70% + 4em);
+  top: calc(70% + 4em);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -510,7 +541,7 @@ button {
   float: left;
   clear: both;
   width: 100%;
-  color: #B3B1B2;
+  color: #b3b1b2;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: -0.2px;
@@ -518,8 +549,8 @@ button {
 
 .judges .card-profile_user-stats .user-stats span {
   font-size: 26px;
-  color: #5E5E5E;
-  padding: .18em 0;
+  color: #5e5e5e;
+  padding: 0.18em 0;
   display: inline-block;
 }
 
@@ -533,7 +564,7 @@ button {
 .schedule__container {
   width: 80%;
   margin: 0 auto;
-  color: #011638;
+  color: #000000;
 }
 
 .schedule__container .date p {
@@ -570,7 +601,7 @@ button {
 }
 
 .schedule .date p {
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 .schedule .events {
@@ -584,8 +615,8 @@ button {
   padding: 10px;
   border-bottom: 1px dashed #ccc;
   line-height: 22px;
-  -webkit-transition: ease .4s all;
-  transition: ease .4s all;
+  -webkit-transition: ease 0.4s all;
+  transition: ease 0.4s all;
 }
 
 .schedule .events-detail li:hover {
@@ -605,7 +636,7 @@ button {
 }
 
 .schedule .event-location {
-  font-size: .8em;
+  font-size: 0.8em;
   color: tomato;
   margin-left: 70px;
 }
@@ -630,7 +661,7 @@ button {
 }
 
 .venue {
-  background: #011638;
+  background: #000000;
   color: #fff;
   text-align: center;
   padding: 2rem 0;
@@ -669,24 +700,111 @@ button {
   padding: 2rem;
 }
 
+@media (max-width: 720px) {
+  .venue__address {
+    width: 100%;
+    padding: 0rem;
+  }
+}
+
 .venue__name {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 400;
   letter-spacing: 0.2rem;
+}
+
+@media (max-width: 720px) {
+  .venue__name {
+    font-size: 1.4rem;
+  }
 }
 
 .venue__location {
   font-size: 1.4rem;
 }
 
+@media (max-width: 720px) {
+  .venue__location {
+    font-size: 1.2rem;
+  }
+}
+
+.faq {
+  text-align: left;
+  margin-top: 4rem;
+}
+
+.faq__container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.faq__question {
+  font-size: 1.4rem;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+.faq__answer {
+  margin-bottom: 1.8em;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 32px;
+  font-weight: 400;
+}
+
 .sponsers {
-  min-height: 100vh;
+  min-height: 50vh;
   text-align: center;
   padding: 2rem 0;
+  background: #f7f7f7;
+}
+
+.sponsers__container {
+  margin-top: 4rem;
+  margin: 4rem auto;
+}
+
+.sponsers__image {
+  max-width: 80%;
 }
 
 .footer {
-  background: #011638;
+  background: #000000;
+  padding: 0 0 2rem 0;
   min-height: 10vh;
+  color: #fff;
+}
+
+.footer__header {
+  padding: 1rem 0 1rem 0;
+  font-size: 1.4rem;
+}
+
+.footer__names {
+  width: 5rem;
+  display: inline-block;
+}
+
+.footer__container {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 720px) {
+  .footer__container {
+    display: block;
+  }
+}
+
+.footer__links {
+  padding: 2rem;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

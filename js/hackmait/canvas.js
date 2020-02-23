@@ -34,7 +34,7 @@ var w = c.width = window.innerWidth,
     
     baseRad = Math.PI * 2 / 6;
     
-ctx.fillStyle = '#011638';
+ctx.fillStyle = '#000000';
 ctx.fillRect( 0, 0, w, h );
 
 function loop() {
@@ -45,7 +45,7 @@ function loop() {
   
   ctx.globalCompositeOperation = 'source-over';
   ctx.shadowBlur = 0;
-  ctx.fillStyle = 'rgba(1,22,56,alp)'.replace( 'alp', opts.repaintAlpha );
+  ctx.fillStyle = 'rgba(0,0,0,alp)'.replace( 'alp', opts.repaintAlpha );
   ctx.fillRect( 0, 0, w, h );
   ctx.globalCompositeOperation = 'lighter';
   
@@ -115,7 +115,7 @@ window.addEventListener( 'resize', function(){
   
   w = c.width = window.innerWidth;
   h = c.height = window.innerHeight;
-  ctx.fillStyle = '#011638';
+  ctx.fillStyle = '#000000';
   ctx.fillRect( 0, 0, w, h );
   
   opts.cx = w / 2;

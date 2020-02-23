@@ -113,4 +113,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
 }
+
+.layer__links {
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
