@@ -7,7 +7,7 @@ window.addEventListener("mousewheel", event => {
     document.getElementById("navbar").style.opacity = 0;
   }
 });
-console.log(document.getElementById("nav-menu"));
+
 document.getElementById("nav-menu").addEventListener("click", () => {
   document.getElementById("navs").style.display = "block";
  
@@ -18,7 +18,6 @@ document.getElementById("navs").addEventListener("click", () => {
       window.innerWidth ||
       document.documentElement.clientWidth ||
       document.body.clientWidth;
-      console.log(width)
     if(width < 720){
     document.getElementById("navs").style.display = "none";
     }
