@@ -879,7 +879,7 @@ button {
   display: flex;
   background: #000;
   z-index: 99999;
-  padding: 0 1rem;
+  padding: 0 10%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-transition: all .2s;
