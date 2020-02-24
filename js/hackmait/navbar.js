@@ -18,6 +18,7 @@ document.getElementById("navs").addEventListener("click", () => {
       window.innerWidth ||
       document.documentElement.clientWidth ||
       document.body.clientWidth;
+      console.log(width)
     if(width < 720){
     document.getElementById("navs").style.display = "none";
     }
