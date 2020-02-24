@@ -195,7 +195,7 @@ button {
 }
 
 .m-0 {
-  margin: 0;
+  margin: 2.4rem 0;
 }
 
 .flex-card {
@@ -879,19 +879,48 @@ button {
   display: flex;
   background: #000;
   z-index: 99999;
+  padding: 0 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  width: 100vw;
 }
 
 .navbar__navs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50vw;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 720px) {
+  .navbar__navs {
+    display: none;
+    margin-top: 1rem;
+    position: absolute;
+    background: #000;
+    width: 90%;
+    padding: 1rem;
+    border-radius: 5px;
+    -webkit-box-shadow: 0.2rem 0.2rem 4rem rgba(0, 0, 0, 0.2);
+            box-shadow: 0.2rem 0.2rem 4rem rgba(0, 0, 0, 0.2);
+    -webkit-animation: rise 0.2s;
+            animation: rise 0.2s;
+  }
 }
 
 .navbar__navs li {
   display: block;
+  margin: 0 1rem;
 }
 
 .navbar__navs li a {
@@ -899,7 +928,54 @@ button {
   text-decoration: none;
 }
 
-.navbar__logo {
-  width: 50vw;
+@media (max-width: 720px) {
+  .navbar__navs li {
+    padding: 1rem;
+  }
+}
+
+.navbar__menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .navbar__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.navbar__logo p {
+  color: #fff;
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+@-webkit-keyframes rise {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rise {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
