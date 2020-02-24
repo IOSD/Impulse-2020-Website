@@ -905,10 +905,12 @@ button {
 @media (max-width: 720px) {
   .navbar__navs {
     display: none;
-    margin-top: 1rem;
     position: absolute;
-    background: #000;
-    width: 90%;
+    background: #f7f7f7;
+    width: 95%;
+    margin: 1rem auto;
+    left: 2.5%;
+    right: 2.5%;
     padding: 1rem;
     border-radius: 5px;
     -webkit-box-shadow: 0.2rem 0.2rem 4rem rgba(0, 0, 0, 0.2);
@@ -926,6 +928,12 @@ button {
 .navbar__navs li a {
   color: #fff;
   text-decoration: none;
+}
+
+@media (max-width: 720px) {
+  .navbar__navs li a {
+    color: #000;
+  }
 }
 
 @media (max-width: 720px) {
@@ -978,4 +986,4 @@ button {
     opacity: 1;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=hackmait.css.map */

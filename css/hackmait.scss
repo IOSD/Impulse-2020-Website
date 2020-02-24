@@ -753,6 +753,7 @@ button {
   box-sizing: border-box;
   transition: all .2s;
   width: 100vw;
+//   position: relative;
   &__navs{
     display: flex;
     flex:1;
@@ -760,15 +761,17 @@ button {
     align-items: center;
     @media (max-width:720px) {
       display: none;
-      margin-top: 1rem;
       position: absolute;
-      background: #000;
-      width: 90%;
+      background: rgba(#f7f7f7,1);
+      width: 95%;
+      margin: 1rem auto;
+      left:2.5%;
+      right: 2.5%;
       padding: 1rem;
       border-radius: 5px;
       box-shadow: 0.2rem 0.2rem 4rem rgba(0,0,0,0.2);
       animation: rise 0.2s ;
-
+      
     }
     li{
       display:block;
@@ -776,6 +779,9 @@ button {
       a{
         color: #fff;
         text-decoration: none;
+        @media (max-width:720px) {
+            color: #000;
+          }
       }
       @media (max-width:720px) {
         padding:1rem

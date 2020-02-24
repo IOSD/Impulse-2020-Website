@@ -10,15 +10,14 @@ window.addEventListener("mousewheel", event => {
 
 document.getElementById("nav-menu").addEventListener("click", () => {
   document.getElementById("navs").style.display = "block";
- 
 });
 
 document.getElementById("navs").addEventListener("click", () => {
-    const width =
-      window.innerWidth ||
-      document.documentElement.clientWidth ||
-      document.body.clientWidth;
-    if(width < 720){
+  const width =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
+  if (width < 720) {
     document.getElementById("navs").style.display = "none";
-    }
-  });
+  }
+});

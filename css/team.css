@@ -4,7 +4,7 @@ body {
 }
 
 .team {
-  background: #000;
+  background: #171941;
 }
 
 .team__header {
@@ -33,11 +33,32 @@ body {
   -ms-grid-columns: (minmax(12rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   grid-gap: 3rem;
+  grid-auto-rows: 20rem;
+}
+
+.grid--sm {
+  width: 40%;
+  margin: 0 auto;
+  padding: 0 0 4rem 0;
+  -ms-grid-columns: (minmax(12rem, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(12rem, 1fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 720px) {
+  .grid--sm {
+    width: initial;
+    -ms-grid-columns: (minmax(12rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
 }
 
 @media (max-width: 720px) {
   .grid {
     padding: 0 2rem;
+    grid-auto-rows: initial;
   }
 }
 
