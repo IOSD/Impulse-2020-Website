@@ -15,7 +15,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  font-family: "Open Sans", "sans-sarif";
+  font-family: "Open Sans", "sans-sarif" !important;
 }
 
 * {
@@ -130,6 +130,8 @@ button {
   line-height: 1.2;
   padding: 0.5rem 0.2rem 0 0;
   margin: 0;
+  color: #fff;
+
 }
 
 .heading--dark {
@@ -581,6 +583,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0;
 }
 
 @media (max-width: 720px) {
@@ -601,6 +604,7 @@ button {
 
 .schedule .date h3 {
   font-size: 1.5em;
+  color: #000;
 }
 
 .schedule .date p {
@@ -668,8 +672,12 @@ button {
   color: #fff;
   text-align: center;
   padding: 2rem 0;
+  
 }
+.venue h2,h3,p{
+  color: #fff;
 
+}
 .venue__container {
   width: 80%;
   margin: 2rem auto;
@@ -746,6 +754,8 @@ button {
   font-size: 1.4rem;
   letter-spacing: 0;
   line-height: 32px;
+  color: #000;
+
 }
 
 .faq__answer {
@@ -754,6 +764,8 @@ button {
   letter-spacing: 0;
   line-height: 32px;
   font-weight: 400;
+  color: #000;
+
 }
 
 .sponsers {
@@ -761,6 +773,8 @@ button {
   text-align: center;
   padding: 2rem 0;
   background: #f7f7f7;
+  color: #fff;
+
 }
 
 .sponsers__container {
@@ -851,6 +865,8 @@ button {
 .theme__name {
   font-size: 2rem;
   font-weight: 500;
+  color: #000;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -870,8 +886,35 @@ button {
   letter-spacing: 0;
   line-height: 32px;
   font-weight: 400;
+  color: #000;
+
+}
+.clr{
+  background-color: #000000;
+}
+.logo {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+}
+.dropdown-menu{
+  background-color: #1e272e;;
+}
+.dropdown-menu:before{
+  color: #1e272e;;
 }
 
+@media screen and (max-width: 991px){
+  .navbar button{
+    margin: 0;
+  }
+.navbar-collapse {
+
+    background: #1e272e;
+
+}
+}
+/* 
 .navbar {
   position: fixed;
   display: -webkit-box;
@@ -985,5 +1028,5 @@ button {
   100% {
     opacity: 1;
   }
-}
+} */
 /*# sourceMappingURL=hackmait.css.map */

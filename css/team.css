@@ -138,4 +138,12 @@ body {
 .layer__links {
   text-align: center;
 }
+.clr{
+  background-color: #0d3c79;
+}
+.logo {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+}
 /*# sourceMappingURL=style.css.map */
