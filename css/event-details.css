@@ -57,6 +57,9 @@ body{
 #footer{
 	background: #011638;
 }
+#footer1{
+	background:black;
+}
 .cnt{
 	display: inline-block;
 	margin-left: 10px;
@@ -66,9 +69,23 @@ body{
 	font-size: 15px !important;
 	width: 20% ;
 }
+.cnt_int{
+	display: inline-block;
+	margin-left: 10px;
+	
+	color: black !important;
+	font-weight: 700 !important;
+	font-size: 15px !important;
+	width: 20% ;
+}
 .nmb{
 	color: white !important;
 	font-weight: 300 !important;
+	font-size: 15px !important;
+}
+.nmb_int{
+	color: black !important;
+	font-weight: 600 !important;
 	font-size: 15px !important;
 }
 .rule-content{
@@ -157,7 +174,7 @@ body{
 	padding-top: 20vh;
 }
 #navigation{
-	background-color: #182f57;
+	background-color: #1e272e;
 }
 .social-icon {
   margin: 20px 0 20px 10px;
@@ -169,9 +186,73 @@ body{
 	/*color: #ed254e;*/
 	font-weight: 600;
 }
+#crsl{
+	margin-top: 50px;
+}
+.speaker{
+	width: 100vw;
+	overflow: hidden;
+	filter: grayscale(1);
+}
+.hc{
+	position: relative;
+	height: auto;
+}
+.in_heading{
+	position: absolute;
+	top:40%;
+	left: 10%;
+}
+.in_heading h1{
+	font-size: 50px;
+	font-weight: 900;
+}
+.in_heading h2{
+	font-size: 45px;
+	font-weight: 600;
+}
+.in_name{
+	position: absolute;
+	top:40%;
+	right: 10%;
+}
+.in_name h1,.in_name1 h1{
+	font-size: 50px;
+	font-weight: 900;
+	text-align: right;
+}
+.in_name1{
+	position: absolute;
+	top:50%;
+	right: 10%;
+}
 
-
-
+.int_btn{
+	background: none;
+    border: 2px solid;
+    border-radius: 5px;
+    font: inherit;
+    font-size: 20px;
+    line-height: 1;
+    margin: 2rem 0;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+	color: var(--color);
+	-webkit-transition: 0.25s;
+	transition: 0.25s;
+	--color: #ff7f82;
+  	--hover: #e5ff60;
+}
+.int_btn:hover,
+.int_btn:focus {
+	border-color: var(--hover);
+    color: #fff;
+  -webkit-box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+          box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+  transform: translateY(-0.25em);
+}
 .social {
   background-color: #26547C;
   color: #fff;
@@ -223,6 +304,56 @@ body{
 	.cnt{
 		width: 30%;
 	}
+	.cnt_int{
+		width: 30%;
+	}
+	.in_heading{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	}
+	.in_heading h1{
+		font-size: 20px;
+		font-weight: 900;
+		margin-left: -81px;
+		margin-bottom: 10px;
+	}
+	.in_heading h2{
+		font-size: 15px;
+		font-weight: 600;
+		margin-left: -45.9px;
+		margin-bottom: 10px;
+	}
+	.in_heading button{
+		margin-top: 0;
+		margin-left: -57.5px;
+	}
+	.in_name{
+		position: absolute;
+		top:20%;
+		left: 1%;
+	}
+	.in_name h1{
+		font-size: 20px;
+		font-weight: 900;
+		text-align: left;
+	}
+	.in_name1{
+		display:none;
+	}
+	#dhat{
+		display: none;
+	}
+	.typewriter1 h1 {
+	  overflow: hidden; /* Ensures the content is not revealed until the animation */
+	  border-right: .15em solid #25ced1; /* The typwriter cursor */
+	  white-space: nowrap; /* Keeps the content on a single line */
+	  /*margin: 0 auto;  Gives that scrolling effect as the typing happens */
+	  letter-spacing: .1em; /* Adjust as needed */
+	  animation: 
+	    typing 2.5s steps(30, end),
+	    blink-caret .75s step-end infinite;
+	}
 
 }
 
@@ -250,4 +381,28 @@ body{
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
+}
+
+/*typewriter*/
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #25ced1; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .1em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(50, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #25ced1; }
 }
