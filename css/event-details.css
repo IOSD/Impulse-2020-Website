@@ -69,9 +69,23 @@ body{
 	font-size: 15px !important;
 	width: 20% ;
 }
+.cnt_int{
+	display: inline-block;
+	margin-left: 10px;
+	
+	color: black !important;
+	font-weight: 700 !important;
+	font-size: 15px !important;
+	width: 20% ;
+}
 .nmb{
 	color: white !important;
 	font-weight: 300 !important;
+	font-size: 15px !important;
+}
+.nmb_int{
+	color: black !important;
+	font-weight: 600 !important;
 	font-size: 15px !important;
 }
 .rule-content{
@@ -212,6 +226,31 @@ body{
 	top:50%;
 	right: 10%;
 }
+
+.int_btn{
+	background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 2rem 0;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+	color: var(--color);
+	-webkit-transition: 0.25s;
+	transition: 0.25s;
+	--color: #ff7f82;
+  	--hover: #e5ff60;
+}
+.int_btn:hover,
+.int_btn:focus {
+	border-color: var(--hover);
+    color: #fff;
+  -webkit-box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+          box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+  transform: translateY(-0.25em);
+}
 .social {
   background-color: #26547C;
   color: #fff;
@@ -263,9 +302,12 @@ body{
 	.cnt{
 		width: 30%;
 	}
+	.cnt_int{
+		width: 30%;
+	}
 	.in_heading{
 	position: absolute;
-	top:60%;
+	top:50%;
 	left: 50%;
 	}
 	.in_heading h1{
@@ -279,6 +321,10 @@ body{
 		font-weight: 600;
 		margin-left: -45.9px;
 		margin-bottom: 10px;
+	}
+	.in_heading button{
+		margin-top: 0;
+		margin-left: -46px;
 	}
 	.in_name{
 		position: absolute;
