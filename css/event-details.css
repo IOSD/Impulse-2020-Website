@@ -230,7 +230,9 @@ body{
 .int_btn{
 	background: none;
     border: 2px solid;
+    border-radius: 5px;
     font: inherit;
+    font-size: 20px;
     line-height: 1;
     margin: 2rem 0;
     padding: 1rem;
@@ -324,7 +326,7 @@ body{
 	}
 	.in_heading button{
 		margin-top: 0;
-		margin-left: -46px;
+		margin-left: -57.5px;
 	}
 	.in_name{
 		position: absolute;
