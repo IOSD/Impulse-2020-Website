@@ -107,7 +107,7 @@ $(document).ready(function() {
 
   // Activate Carousel
   $('.carousel').carousel({
-    interval: false
+    interval: 3000
   });
 });
 
