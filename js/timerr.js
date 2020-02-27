@@ -1,11 +1,11 @@
-const t = elem => document.querySelector(elem);
+const $ = elem => document.querySelector(elem);
 
 const countdown = function(_config) {
-  const tarDate = t(_config.target).getAttribute('data-date').split('-');
+  const tarDate = $(_config.target).getAttribute('data-date').split('-');
   const day = parseInt(tarDate[0]);
   const month = parseInt(tarDate[1]);
   const year = parseInt(tarDate[2]);
-  let tarTime = t(_config.target).getAttribute('data-time');
+  let tarTime = $(_config.target).getAttribute('data-time');
   let tarhour, tarmin;
   
   if (tarTime != null) {    
@@ -19,10 +19,10 @@ const countdown = function(_config) {
   // Set the date we're counting down to
   const countDownDate = new Date(year, month-1, day, tarhour, tarmin, 0, 0).getTime();
 
-  t(_config.target+' .day .word').innerHTML = _config.dayWord;
-  t(_config.target+' .hour .word').innerHTML = _config.hourWord;
-  t(_config.target+' .min .word').innerHTML = _config.minWord;
-  t(_config.target+' .sec .word').innerHTML = _config.secWord; 
+  $(_config.target+' .day .word').innerHTML = _config.dayWord;
+  $(_config.target+' .hour .word').innerHTML = _config.hourWord;
+  $(_config.target+' .min .word').innerHTML = _config.minWord;
+  $(_config.target+' .sec .word').innerHTML = _config.secWord; 
   
   const updateTime = () => {
     // Get todays date and time
@@ -42,18 +42,18 @@ const countdown = function(_config) {
       //$(".countdown").innerHTML = "<h1>EXPIRED</h1>";
       //window.location.href="https://www.google.com";
       
-      t(_config.target+' .day .num').innerHTML = "00";
-      t(_config.target+' .hour .num').innerHTML = "00";
-      t(_config.target+' .min .num').innerHTML = "00";
-      t(_config.target+' .sec .num').innerHTML = "00";
+      $(_config.target+' .day .num').innerHTML = "00";
+      $(_config.target+' .hour .num').innerHTML = "00";
+      $(_config.target+' .min .num').innerHTML = "00";
+      $(_config.target+' .sec .num').innerHTML = "00";
       
     } else {
       requestAnimationFrame(updateTime);
 
-      t(_config.target+' .day .num').innerHTML = addZero(days);
-      t(_config.target+' .hour .num').innerHTML = addZero(hours);
-      t(_config.target+' .min .num').innerHTML = addZero(minutes);
-      t(_config.target+' .sec .num').innerHTML = addZero(seconds);
+      $(_config.target+' .day .num').innerHTML = addZero(days);
+      $(_config.target+' .hour .num').innerHTML = addZero(hours);
+      $(_config.target+' .min .num').innerHTML = addZero(minutes);
+      $(_config.target+' .sec .num').innerHTML = addZero(seconds);
     }
   }
   
