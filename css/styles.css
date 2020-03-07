@@ -349,10 +349,16 @@ p {
   }
 }
 
+.sponsor-img {
+  vertical-align: middle;
+}
+
 /* Sponsors */
 .sponsors-img {
   border-radius: 20px;
   padding: 4%;
+  position: relative;
+  display: block;
   transition: transform .2s; /* Animation */
 }
 .sponsors-img:hover {
