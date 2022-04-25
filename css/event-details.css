@@ -99,6 +99,10 @@ body{
 	padding-top: 30px;
 	width: 100%;
 }
+.event-title {
+	font-size: 3rem;
+	font-weight: 600;
+}
 .page-title{
 	display: none;
 	/*margin: auto;*/
@@ -139,6 +143,29 @@ body{
 	margin-bottom: 5px;
 	font-weight: 500;
 	text-transform: none !important;
+	position: relative;
+	padding-left: 1rem;
+}
+.faq-heading:hover, .faq-heading:focus {
+	color: #25ced1;
+}
+.faq-heading::before {
+	content: '';
+  border-width: .4rem;
+  border-style: solid;
+  border-color: transparent transparent transparent #25ced1;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: rotate(0deg) translateY(-50%);
+  transform-origin: 28% 0;
+  transition: .25s transform ease;
+}
+.faq-heading[aria-expanded="false"]::before {
+	transform: rotate(0deg) translateY(-50%);
+}
+.faq-heading[aria-expanded="true"]::before {
+	transform: rotate(90deg) translateY(-50%);
 }
 .collapse-box{
 	margin-top: 10px;
